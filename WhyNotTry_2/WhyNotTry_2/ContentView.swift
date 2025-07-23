@@ -14,7 +14,9 @@ struct ContentView: View {
     var body: some View {
         VStack{
             Text("Why not try..")
-                .font(.title)
+                .font(.largeTitle.bold())
+            Spacer()
+            
             VStack {
                 Circle()
                     .fill(colors.randomElement() ?? .blue)
@@ -24,7 +26,7 @@ struct ContentView: View {
                             .font(.system(size: 144))
                             .foregroundColor(.white)
                     )
-                Text("\(selected)")
+                Text("\(selected)!")
                     .font(.title)
             }
             
