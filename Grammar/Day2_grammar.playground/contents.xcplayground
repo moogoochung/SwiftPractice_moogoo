@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='7.0' target-platform='ios' swift-version='6' buildActiveScheme='true' importAppTypes='true'>
+    <pages>
+        <page name='반복문_3'/>
+        <page name='반복문_1'/>
+        <page name='반복문_2'/>
+        <page name='반복문_4'/>
+        <page name='반복문_5'/>
+    </pages>
+</playground>
