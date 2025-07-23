@@ -7,4 +7,5 @@ DerivedData/
 *.xcuserstate
 
 # Swift Package Manager
-Package.resolved
+Package.resolvedWhyNotTry/
+galleryView/
