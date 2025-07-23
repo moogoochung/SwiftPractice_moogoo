@@ -19,7 +19,7 @@ struct ContentView: View {
                 Image(uiImage: uiImage)
                     .resizable()
                     .scaledToFit()
-                    .frame(height: 300)
+                    .frame(height: 200)
             }
             
             PhotosPicker(
