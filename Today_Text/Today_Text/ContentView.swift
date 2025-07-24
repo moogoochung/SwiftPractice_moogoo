@@ -19,6 +19,7 @@ struct ContentView: View {
     var colors: [Color] = [.blue, .cyan, .green, .orange, .pink, .purple, .red, .yellow]
     
     @State private var quotesIndex = "오늘은 어제보다 더 나은 내가 되는 날이야."
+    @State private var id = 1
     
     var body: some View {
         VStack {
@@ -26,33 +27,39 @@ struct ContentView: View {
             Circle()
                 .fill(colors.randomElement() ?? .blue)
                 .padding()
+                .transition(.slide)
+                .id(id)
                 .onTapGesture {
-                    withAnimation{ //버튼 없이 탭만 해도 상호작용 가능
+                    withAnimation(.easeInOut(duration: 1)) { //버튼 없이 탭만 해도 상호작용 가능
                         quotesIndex = quotes.randomElement() ?? "오늘은 어제보다 더 나은 내가 되는 날이야."
+                        id += 1
                     }
                 }
                 .overlay(
                     Text(quotesIndex)
-                        .font(.title2)
+                        .font(.largeTitle)
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
                         .padding()
                         .frame(minHeight: 100)
                         .clipShape(RoundedRectangle(cornerRadius: 20))
                         .onTapGesture { //버튼 없이 탭만 해도 상호작용 가능
-                            withAnimation{
+                            withAnimation(.easeInOut(duration: 1)) {
                                 quotesIndex = quotes.randomElement() ?? "오늘은 어제보다 더 나은 내가 되는 날이야."
+                                id += 1
                             }
                         }
                 )
             Spacer()
             
             Button("다른 명언"){
-                withAnimation{
+                withAnimation(.easeInOut(duration: 1)) {
                     quotesIndex = quotes.randomElement() ?? "오늘은 어제보다 더 나은 내가 되는 날이야."
+                    id += 1
                 }
             }
             .buttonStyle(.borderedProminent)
+            
             Spacer()
         }
     }
