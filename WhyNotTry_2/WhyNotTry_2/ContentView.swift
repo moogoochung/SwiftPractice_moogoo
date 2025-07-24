@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    var activities = ["Archery", "Baseball", "Basketball", "Cycling", "Diving", "Football", "Golf", "Hiking", "Ice skating", "Jogging", "Kayaking", "Martial arts", "Mountain biking", "Swimming", "Tennis", "Volleyball"]
+    var activities = ["Archery", "Baseball", "Basketball", "Cycling", "Diving", "Football", "Golf", "Hiking", "Ice skating", "Jogging", "Kayaking", "Martial arts", "Muntain biking", "Swimming", "Tennis", "Volleyball"]
     var colors: [Color] = [.blue, .cyan, .green, .orange, .pink, .purple, .red, .yellow]
     @State private var selected = "Archery"
     var body: some View {
