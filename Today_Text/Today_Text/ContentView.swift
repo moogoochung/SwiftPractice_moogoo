@@ -1,4 +1,4 @@
-//버튼 누르면 오늘의 기분과 명언 한 줄 저장.
+//버튼 누르면 오늘의 기분과 명언 한 줄 랜덤으로 출력
 
 import SwiftUI
 
@@ -26,9 +26,24 @@ struct ContentView: View {
             Circle()
                 .fill(colors.randomElement() ?? .blue)
                 .padding()
+                .onTapGesture {
+                    withAnimation{ //버튼 없이 탭만 해도 상호작용 가능
+                        quotesIndex = quotes.randomElement() ?? "오늘은 어제보다 더 나은 내가 되는 날이야."
+                    }
+                }
                 .overlay(
                     Text(quotesIndex)
-                        .font(.title)
+                        .font(.title2)
+                        .foregroundColor(.white)
+                        .multilineTextAlignment(.center)
+                        .padding()
+                        .frame(minHeight: 100)
+                        .clipShape(RoundedRectangle(cornerRadius: 20))
+                        .onTapGesture { //버튼 없이 탭만 해도 상호작용 가능
+                            withAnimation{
+                                quotesIndex = quotes.randomElement() ?? "오늘은 어제보다 더 나은 내가 되는 날이야."
+                            }
+                        }
                 )
             Spacer()
             
