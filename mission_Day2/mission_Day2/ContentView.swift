@@ -21,6 +21,7 @@ struct ContentView: View {
             Text("이름 입력하기")
                 .font(.title)
                 .frame(height: 150)
+                .padding()
             
             TextField("이름을 입력해주세요.", text: $name)
                 .textFieldStyle(.roundedBorder)
