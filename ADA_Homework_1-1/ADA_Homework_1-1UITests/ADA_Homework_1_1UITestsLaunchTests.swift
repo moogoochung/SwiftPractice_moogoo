@@ -1,13 +1,13 @@
 //
-//  ADA_d1UITestsLaunchTests.swift
-//  ADA_d1UITests
+//  ADA_Homework_1_1UITestsLaunchTests.swift
+//  ADA_Homework_1-1UITests
 //
-//  Created by 정무구 on 3/11/26.
+//  Created by 정무구 on 3/16/26.
 //
 
 import XCTest
 
-final class ADA_d1UITestsLaunchTests: XCTestCase {
+final class ADA_Homework_1_1UITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

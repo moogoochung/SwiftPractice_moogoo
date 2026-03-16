@@ -1,13 +1,13 @@
 //
-//  ADA_d1UITests.swift
-//  ADA_d1UITests
+//  ADA_Homework_1_1UITests.swift
+//  ADA_Homework_1-1UITests
 //
-//  Created by 정무구 on 3/11/26.
+//  Created by 정무구 on 3/16/26.
 //
 
 import XCTest
 
-final class ADA_d1UITests: XCTestCase {
+final class ADA_Homework_1_1UITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
