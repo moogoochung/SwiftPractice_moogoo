@@ -12,7 +12,7 @@ struct ContentView: View {
         GeometryReader { geo in
             ZStack {
                 LinearGradient(
-                colors: [.blue, .cyan],
+                    colors: [.blue, .orange],
                 startPoint: .top,
                 endPoint:.bottom
             )
